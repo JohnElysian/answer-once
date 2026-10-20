@@ -2,6 +2,8 @@
 
 Local, open-weight AI for the questions that keep coming back. Give it a small support backlog and existing answer cards. It groups similar questions, retrieves exact source excerpts, and leaves a queue of questions that need an answer.
 
+[Try the public browser demo](https://johnelysian.github.io/answer-once/). It starts with a clearly labelled recorded run; press **Run the local AI demo** to compute a fresh result locally in your browser.
+
 It is a review tool. It does not generate answers, verify a handbook, send replies, connect to a help desk, or modify source files.
 
 ## Run on Windows, macOS or Linux
@@ -54,7 +56,7 @@ The pinned Apache-2.0 `Xenova/all-MiniLM-L6-v2` ONNX model converts text into 38
 
 Grouping uses a 0.73 complete-link threshold: every pair in a group must pass. This avoids merging unrelated questions through a chain of intermediate matches. Results depend on stable ID order. The sample has 10 authored questions: 6 get the expected handbook source, 4 get no source, and the batch becomes 6 groups. The dark-mode pair remains split: a visible false negative. This tiny authored fixture is a reproducibility example, not an independent benchmark or measured customer time saving.
 
-Limits: English-focused model; long inputs may be truncated by the tokenizer; negation, subtle permission differences and stale or misleading titles can produce wrong matches. A verbatim quote can still be wrong for a customer. Review all suggestions. Batches are capped at 250 questions, 100 cards, and 2,000 characters per question/body. No deployments or customer integrations have been claimed.
+Limits: English-focused model; long inputs may be truncated by the tokenizer; negation, subtle permission differences and stale or misleading titles can produce wrong matches. A verbatim quote can still be wrong for a customer. Review all suggestions. Batches are capped at 250 questions, 100 cards, and 2,000 characters per question/body. The public demo uses synthetic data; no customer integration or adoption is claimed.
 
 ## Verify
 
@@ -67,6 +69,12 @@ npm audit
 
 Core tests cover source preservation, low-score abstention, high-score ambiguity, transitive grouping, stable input order and malformed input. The model integration check is separate so a normal unit-test run needs no model download.
 
+## Publishing the static demo
+
+The `docs/` directory is the prebuilt public demo, served by GitHub Pages from `main` → `/docs`. To refresh it, run `npm run build`, copy `dist/` into `docs/`, and include `.nojekyll`, `THIRD_PARTY_NOTICES.md` and `licenses/` there. Never copy `.cache/`, `node_modules/` or private input batches. The source and generated assets are public.
+
 ## Origin and licences
 
 Created October 20, 2026, for the DEV Hacktoberfest Week 3 **Slow and Steady** challenge. Original application and authored fixtures were prepared with Codex on the owner's behalf; no human-user trial is claimed. App code is MIT. The project credits and uses [Transformers.js](https://github.com/huggingface/transformers.js), the [Xenova ONNX conversion](https://huggingface.co/Xenova/all-MiniLM-L6-v2), and the [Sentence Transformers original](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), all under their respective Apache-2.0 licences. Model revision: `751bff37182d3f1213fa05d7196b954e230abad9`. Weights are downloaded rather than redistributed in this repository.
+
+Bundled runtime and dependency notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [licenses/](licenses/), including ONNX Runtime's third-party notices.

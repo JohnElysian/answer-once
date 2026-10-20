@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "model": {
+    "name": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "dtype": "q8"
+  },
+  "settings": {
+    "answerThreshold": 0.5,
+    "answerMargin": 0.06,
+    "clusterThreshold": 0.73
+  },
+  "notice": "Similarity is not a probability or factual validation. Review every suggestion. No replies are sent.",
+  "summary": {
+    "tickets": 10,
+    "suggestedAnswers": 6,
+    "needsAnswer": 4,
+    "questionGroups": 6,
+    "repeatedQuestionGroups": 4
+  },
+  "tickets": [
+    {
+      "id": "Q01",
+      "text": "I forgot my password. How do I reset it?",
+      "status": "review_suggested_answer",
+      "score": 0.8756457709229414,
+      "margin": 0.8157840000559702,
+      "candidates": [
+        {
+          "id": "password",
+          "score": 0.8756457709229414
+        },
+        {
+          "id": "notifications",
+          "score": 0.05986177086697123
+        }
+      ],
+      "answer": {
+        "id": "password",
+        "title": "How do I reset a forgotten account password?",
+        "quote": "Choose Forgot password on the sign-in page. Enter your account email, then use the reset link. The link expires after 30 minutes. Support cannot read your password.",
+        "source": "Authored demo handbook / Account / Password reset"
+      }
+    },
+    {
+      "id": "Q02",
+      "text": "How can I reset my forgotten password?",
+      "status": "review_suggested_answer",
+      "score": 0.9467140376343919,
+      "margin": 0.8736770611509328,
+      "candidates": [
+        {
+          "id": "password",
+          "score": 0.9467140376343919
+        },
+        {
+          "id": "notifications",
+          "score": 0.07303697648345914
+        }
+      ],
+      "answer": {
+        "id": "password",
+        "title": "How do I reset a forgotten account password?",
+        "quote": "Choose Forgot password on the sign-in page. Enter your account email, then use the reset link. The link expires after 30 minutes. Support cannot read your password.",
+        "source": "Authored demo handbook / Account / Password reset"
+      }
+    },
+    {
+      "id": "Q03",
+      "text": "Where do I download a CSV export of my workspace data?",
+      "status": "review_suggested_answer",
+      "score": 0.9259225541952009,
+      "margin": 0.904185458804352,
+      "candidates": [
+        {
+          "id": "export",
+          "score": 0.9259225541952009
+        },
+        {
+          "id": "password",
+          "score": 0.02173709539084894
+        }
+      ],
+      "answer": {
+        "id": "export",
+        "title": "How do I download my workspace data as a CSV export?",
+        "quote": "A workspace owner can open Settings, choose Export data, and select CSV. The export includes records visible to that owner. Large exports may take several minutes.",
+        "source": "Authored demo handbook / Workspace / Data export"
+      }
+    },
+    {
+      "id": "Q04",
+      "text": "How can I export the workspace records to a CSV file?",
+      "status": "review_suggested_answer",
+      "score": 0.8825865376843184,
+      "margin": 0.8757312007113186,
+      "candidates": [
+        {
+          "id": "export",
+          "score": 0.8825865376843184
+        },
+        {
+          "id": "password",
+          "score": 0.0068553369729997685
+        }
+      ],
+      "answer": {
+        "id": "export",
+        "title": "How do I download my workspace data as a CSV export?",
+        "quote": "A workspace owner can open Settings, choose Export data, and select CSV. The export includes records visible to that owner. Large exports may take several minutes.",
+        "source": "Authored demo handbook / Workspace / Data export"
+      }
+    },
+    {
+      "id": "Q05",
+      "text": "How do I turn off the daily email digest?",
+      "status": "review_suggested_answer",
+      "score": 0.8601693863632223,
+      "margin": 0.7068191614589061,
+      "candidates": [
+        {
+          "id": "notifications",
+          "score": 0.8601693863632223
+        },
+        {
+          "id": "password",
+          "score": 0.15335022490431613
+        }
+      ],
+      "answer": {
+        "id": "notifications",
+        "title": "How can I stop the daily email digest notifications?",
+        "quote": "Open Profile, then Notifications. Switch Daily digest off and save. This changes digest messages only; security notifications remain enabled.",
+        "source": "Authored demo handbook / Profile / Notifications"
+      }
+    },
+    {
+      "id": "Q06",
+      "text": "Can I stop receiving daily digest notification emails?",
+      "status": "review_suggested_answer",
+      "score": 0.9025272961694009,
+      "margin": 0.8350955008209084,
+      "candidates": [
+        {
+          "id": "notifications",
+          "score": 0.9025272961694009
+        },
+        {
+          "id": "password",
+          "score": 0.06743179534849239
+        }
+      ],
+      "answer": {
+        "id": "notifications",
+        "title": "How can I stop the daily email digest notifications?",
+        "quote": "Open Profile, then Notifications. Switch Daily digest off and save. This changes digest messages only; security notifications remain enabled.",
+        "source": "Authored demo handbook / Profile / Notifications"
+      }
+    },
+    {
+      "id": "Q07",
+      "text": "Does this application support a dark color theme?",
+      "status": "needs_answer",
+      "score": 0.010060968647224921,
+      "margin": 0.05096063596302626,
+      "candidates": [
+        {
+          "id": "password",
+          "score": 0.010060968647224921
+        },
+        {
+          "id": "notifications",
+          "score": -0.04089966731580134
+        }
+      ],
+      "answer": null
+    },
+    {
+      "id": "Q08",
+      "text": "Is there a dark mode for the application interface?",
+      "status": "needs_answer",
+      "score": -0.00010751996252644006,
+      "margin": 0.026224956427988957,
+      "candidates": [
+        {
+          "id": "notifications",
+          "score": -0.00010751996252644006
+        },
+        {
+          "id": "password",
+          "score": -0.0263324763905154
+        }
+      ],
+      "answer": null
+    },
+    {
+      "id": "Q09",
+      "text": "Can we import calendar events from an ICS file?",
+      "status": "needs_answer",
+      "score": 0.23228280032807047,
+      "margin": 0.1817665930012546,
+      "candidates": [
+        {
+          "id": "export",
+          "score": 0.23228280032807047
+        },
+        {
+          "id": "notifications",
+          "score": 0.050516207326815867
+        }
+      ],
+      "answer": null
+    },
+    {
+      "id": "Q10",
+      "text": "Can we import appointments using an ICS calendar file?",
+      "status": "needs_answer",
+      "score": 0.2512004103809711,
+      "margin": 0.2486353781431889,
+      "candidates": [
+        {
+          "id": "export",
+          "score": 0.2512004103809711
+        },
+        {
+          "id": "notifications",
+          "score": 0.0025650322377821673
+        }
+      ],
+      "answer": null
+    }
+  ],
+  "clusters": [
+    {
+      "id": "group-1",
+      "ticketIds": [
+        "Q01",
+        "Q02"
+      ],
+      "representative": "I forgot my password. How do I reset it?",
+      "needsAnswer": false
+    },
+    {
+      "id": "group-2",
+      "ticketIds": [
+        "Q03",
+        "Q04"
+      ],
+      "representative": "Where do I download a CSV export of my workspace data?",
+      "needsAnswer": false
+    },
+    {
+      "id": "group-3",
+      "ticketIds": [
+        "Q05",
+        "Q06"
+      ],
+      "representative": "How do I turn off the daily email digest?",
+      "needsAnswer": false
+    },
+    {
+      "id": "group-4",
+      "ticketIds": [
+        "Q07"
+      ],
+      "representative": "Does this application support a dark color theme?",
+      "needsAnswer": true
+    },
+    {
+      "id": "group-5",
+      "ticketIds": [
+        "Q08"
+      ],
+      "representative": "Is there a dark mode for the application interface?",
+      "needsAnswer": true
+    },
+    {
+      "id": "group-6",
+      "ticketIds": [
+        "Q09",
+        "Q10"
+      ],
+      "representative": "Can we import calendar events from an ICS file?",
+      "needsAnswer": true
+    }
+  ],
+  "execution": {
+    "runtime": "v24.20.0",
+    "platform": "win32",
+    "transformersVersion": "4.3.1",
+    "offline": true,
+    "fetchAttempts": 0,
+    "modelLoadMs": 116,
+    "inferenceAndAnalysisMs": 23
+  }
+}

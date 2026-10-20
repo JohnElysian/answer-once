@@ -1,0 +1,19 @@
+{
+  "answers": [
+    { "id": "password", "title": "How do I reset a forgotten account password?", "body": "Choose Forgot password on the sign-in page. Enter your account email, then use the reset link. The link expires after 30 minutes. Support cannot read your password.", "source": "Authored demo handbook / Account / Password reset" },
+    { "id": "export", "title": "How do I download my workspace data as a CSV export?", "body": "A workspace owner can open Settings, choose Export data, and select CSV. The export includes records visible to that owner. Large exports may take several minutes.", "source": "Authored demo handbook / Workspace / Data export" },
+    { "id": "notifications", "title": "How can I stop the daily email digest notifications?", "body": "Open Profile, then Notifications. Switch Daily digest off and save. This changes digest messages only; security notifications remain enabled.", "source": "Authored demo handbook / Profile / Notifications" }
+  ],
+  "tickets": [
+    { "id": "Q01", "text": "I forgot my password. How do I reset it?" },
+    { "id": "Q02", "text": "How can I reset my forgotten password?" },
+    { "id": "Q03", "text": "Where do I download a CSV export of my workspace data?" },
+    { "id": "Q04", "text": "How can I export the workspace records to a CSV file?" },
+    { "id": "Q05", "text": "How do I turn off the daily email digest?" },
+    { "id": "Q06", "text": "Can I stop receiving daily digest notification emails?" },
+    { "id": "Q07", "text": "Does this application support a dark color theme?" },
+    { "id": "Q08", "text": "Is there a dark mode for the application interface?" },
+    { "id": "Q09", "text": "Can we import calendar events from an ICS file?" },
+    { "id": "Q10", "text": "Can we import appointments using an ICS calendar file?" }
+  ]
+}

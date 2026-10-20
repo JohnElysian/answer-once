@@ -1,0 +1,25 @@
+{
+  "name": "answer-once",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local semantic support-backlog triage with source quotes and an unanswered queue.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "demo": "node src/cli.mjs --demo",
+    "demo:offline": "node src/cli.mjs --demo --offline",
+    "test:offline": "node test/offline-check.mjs",
+    "dev": "vite site --host 127.0.0.1",
+    "build": "vite build site --base ./ --outDir ../dist"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}
